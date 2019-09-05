@@ -20,7 +20,7 @@ console.log(computerSelection)
 
 var answer = [];
     for (var i=0; i <computerSelection.length; i++) {
-        answer[i] ="_"
+        console.log(answer[i] ="_");
     }
 
 // var remainingLetters = computerSelection.length
