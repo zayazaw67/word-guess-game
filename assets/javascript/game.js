@@ -1,7 +1,5 @@
-<script>
+var musicians = ["Lady Gaga", "Taylor Swift", "Miley Cyrus", "Katy Perry",
+"Eminem", "Drake", "John Mayer", "Pitbull"]
 
-
-
-
-    
-</script>
+var computerSelection = musicians[Math.floor(Math.random() * musicians.length)];
+console.log(computerSelection)
