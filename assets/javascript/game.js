@@ -12,12 +12,18 @@ var lives = 10;
 // var userChoiceText = document.getElementById("userchoice-text");
 // var winsText = document.getElementById("wins-text");
 // var lossesText = document.getElementById("losses-text");
+var answerText = document.getElementById("answer-text");
 
 // choose a word
 var computerSelection = musicians[Math.floor(Math.random() * musicians.length)];
 console.log(computerSelection)
 
+var answer = [];
+    for (var i=0; i <computerSelection.length; i++) {
+        answer[i] ="_"
+    }
 
+// var remainingLetters = computerSelection.length
 
 // user input
 document.onkeyup = function(event) {
