@@ -36,7 +36,7 @@ blanks = wordsLetters.length;
 
     for (i = 0; i < blanks; i++) {
         answerBlanks.push("_");
-        console.log(answerBlanks); // Testing via Console.Log
+        console.log(answerBlanks); 
     }
 
 
@@ -47,8 +47,10 @@ blanks = wordsLetters.length;
                                     //   if (!regex.test(userChoice)) {
                                     //     console.log("please enter a letter");}
                                     //   }
-        if (userGuess = wordsLetters) {
+        if ("userGuess" == wordsLetters) {
             alert("working!")
         }
+        else {alert("wrong!")}
 
     }
+
