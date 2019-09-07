@@ -1,5 +1,5 @@
-var musicians = ["Lady Gaga", "Taylor Swift", "Miley Cyrus", "Katy Perry",
-    "Eminem", "Drake", "John Mayer", "Pitbull", "Chris Brown", "Khalid", "Post Malone", "Ariana Grande"]
+var musicians = ["LadyGaga", "TaylorSwift", "MileyCyrus", "KatyPerry",
+    "Eminem", "Drake", "JohnMayer", "Pitbull", "ChrisBrown", "Khalid", "PostMalone", "ArianaGrande"]
 var validLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i",
     "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "x", "y", "z"]
 
@@ -14,6 +14,7 @@ var validLetters = ["a", "b", "c", "d", "e", "f", "g", "h", "i",
     var lossesText = document.getElementById("losses-text")
     var guessesLeftText = document.getElementById("guessesleft-text")
     var guessedLettersText = document.getElementById("guessedletters-text")
+    var blanksText = document.getElementById("blanks-text")
 
 
 
@@ -33,35 +34,21 @@ console.log(wordsLetters)
 blanks = wordsLetters.length;
     console.log(blanks)
 
-
-
-
     for (i = 0; i < blanks; i++) {
         answerBlanks.push("_");
         console.log(answerBlanks); // Testing via Console.Log
     }
 
 
+    document.onkeyup = function (event) {
+        var userGuess = event.key.toLowerCase();
+        console.log(userGuess);
+        var userChoice = event.key;
+                                    //   if (!regex.test(userChoice)) {
+                                    //     console.log("please enter a letter");}
+                                    //   }
+        if (userGuess = wordsLetters) {
+            alert("working!")
+        }
 
-
-
-
-
-// var remainingLetters = computerSelection.length
-
-// user input
-// document.onkeyup = function (event) {
-//     var userGuess = event.key.toLowerCase();
-//     console.log(userGuess);
-//     var userChoice = event.key;
-//                                 //   if (!regex.test(userChoice)) {
-//                                 //     console.log("please enter a letter");}
-//                                 //   }
-//     if (userGuess = computerSelection) {
-//     }
-// }
-
-// display score + user input
-//     userChoiceText.textContent = userGuess;
-//     winsText.textContent = "wins: " + wins;
-//     lossesText.textContent = "losses: " + losses
+    }
