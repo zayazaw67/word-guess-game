@@ -26,28 +26,40 @@ var computerSelection = musicians[Math.floor(Math.random() * musicians.length)];
 console.log(computerSelection)
 
 // separate selected word to make each letter an element
-wordLetters = computerSelection.split("");
-console.log(wordLetters)
+wordsLetters = computerSelection.split("");
+console.log(wordsLetters)
 
 
-blanks = wordLetters.length;
+blanks = wordsLetters.length;
     console.log(blanks)
+
+
+
+
+    for (i = 0; i < blanks; i++) {
+        answerBlanks.push("_");
+        console.log(answerBlanks); // Testing via Console.Log
+    }
+
+
+
+
+
+
 
 // var remainingLetters = computerSelection.length
 
 // user input
-document.onkeyup = function (event) {
-    var userGuess = event.key.toLowerCase();
-    console.log(userGuess);
-    var userChoice = event.key;
-                                //   if (!regex.test(userChoice)) {
-                                //     console.log("please enter a letter");}
-                                //   }
-    if (userGuess = computerSelection) {
-    }
-}
-
-
+// document.onkeyup = function (event) {
+//     var userGuess = event.key.toLowerCase();
+//     console.log(userGuess);
+//     var userChoice = event.key;
+//                                 //   if (!regex.test(userChoice)) {
+//                                 //     console.log("please enter a letter");}
+//                                 //   }
+//     if (userGuess = computerSelection) {
+//     }
+// }
 
 // display score + user input
 //     userChoiceText.textContent = userGuess;
